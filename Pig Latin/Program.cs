@@ -12,8 +12,6 @@ namespace PigLatin
                 Console.Write("Welcome to the Pig Latin Translator.\nPlease enter a word: ");
                 string userInput = Console.ReadLine();
 
-                string finalString = null;
-
                 // Remove whitespace from beginning and end of word
                 string trimmedString = userInput.Trim();
 
