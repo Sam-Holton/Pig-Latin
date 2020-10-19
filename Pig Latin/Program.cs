@@ -63,12 +63,10 @@ namespace PigLatin
                 else
                 {
                     // Credit to Candace Goodson for pointing us towards using .Substring to reorganize original string
-                    // finalString = trimmedString.Substring(vowelIndex, trimmedString.Length - 1) + trimmedString.Substring(0, vowelIndex - 1) + "ay";
-                    Console.WriteLine(trimmedString.Substring(vowelIndex, trimmedString.Length - 1));
-                    Console.WriteLine(trimmedString.Substring(0, vowelIndex - 1));
+                    trimmedString = trimmedString.Substring(vowelIndex) + trimmedString.Substring(0, vowelIndex) + "ay";
                 }
 
-                Console.WriteLine(finalString);
+                Console.WriteLine(trimmedString);
 
                 do
                 {
